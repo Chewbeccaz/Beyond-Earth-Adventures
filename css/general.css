@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-  position: fixed;
+  position: sticky;
   width: 100%;
   background-color: var(--navbarcolor);
   /* height: 100px; */
@@ -26,6 +26,20 @@ nav {
 }
 
 header {
+    background-image: url("../img/plane.png");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+header h1 {
+    font-size:72px;
+    color:#fff; 
+    text-shadow: 2px 2px #1e252b;
+
 }
 
 #logga {
