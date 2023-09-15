@@ -99,7 +99,7 @@ list-style-type: none;
 h1,
 h2,
 h3 {
-font-family: var(--titlefont);
+font-family: var(--primaryfont);
 font-weight: 300;
 }
 
@@ -107,3 +107,49 @@ font-weight: 300;
 p {
 font-family: var(--secondaryfont);
 }
+
+
+#box-container{
+    background-color: transparent;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    
+
+}
+
+#box1, #box2, #box3{
+    width: 400px;
+    height: 300px;
+    margin-top: -40px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px  rgba(0, 0, 0, 0.406);
+    transition: 1s;
+}
+
+
+#box1{
+    background-image: url(../img/wonderland2.png);
+    background-size: cover;
+}
+
+#box2{
+    background-image: url(../img/helvetet.png);
+    background-size: cover;
+}
+
+#box3{
+    background-image: url(../img/månen1.png);
+    background-size: cover;
+}
+
+
+
+#box1:hover, #box2:hover, #box3:hover{
+    height: 400px;
+    width: 500px;
+    transition: 1s;
+}
+
