@@ -1,0 +1,40 @@
+/* ROOT */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap');
+
+
+
+
+:root {
+--mainbg: #EAEAED;
+--navbarcolor: #FFFFFF;
+--footercolor: #1E252B;
+--primarybutton: #184889;
+--secondarybutton: #6371B6;
+--primaryfont:'Roboto Serif', serif;
+--secondaryfont: 'Inter', sans-serif;
+}
+
+nav {
+    background-color: var(--vit);
+    height: 100px;
+    font-family: var(--secondaryfont);
+   
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    font-family: var(--titlefont);
+    font-weight: 300; 
+}
+
+p {
+    font-family: var(--secondaryfont);
+}
