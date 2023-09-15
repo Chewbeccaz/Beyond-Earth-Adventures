@@ -1,72 +1,109 @@
 /* ROOT */
 
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
 
+
 :root {
-  --mainbg: #eaeaed;
-  --navbarcolor: #ffffff;
-  --footercolor: #1e252b;
-  --primarybutton: #184889;
-  --secondarybutton: #6371b6;
-  --primaryfont: "Roboto Serif", serif;
-  --secondaryfont: "Inter", sans-serif;
+--mainbg: #eaeaed;
+--navbarcolor: #ffffff;
+--footercolor: #1e252b;
+--primarybutton: #184889;
+--secondarybutton: #6371b6;
+--primaryfont: "Roboto Serif", serif;
+--secondaryfont: "Inter", sans-serif;
 }
+
 
 body {
-  background-color: var(--mainbg);
-  margin: 0;
+background-color: var(--mainbg);
+margin: 0;
 }
+
 
 nav {
-  position: sticky;
-  width: 100%;
-  background-color: var(--navbarcolor);
-  /* height: 100px; */
-  font-family: var(--secondaryfont);
+position: sticky;
+width: 100%;
+background-color: var(--navbarcolor);
+/* height: 100px; */
+font-family: var(--secondaryfont);
 }
+
 
 header {
-    background-image: url("../img/plane.png");
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
+background-image: url("../img/plane.png");
+background-size: cover;
+background-position: center;
+height: 600px;
+display:flex;
+justify-content: center;
+align-items:center;
 }
+
 
 header h1 {
-    font-size:72px;
-    color:#fff; 
-    text-shadow: 2px 2px #1e252b;
+font-size:72px;
+color:#fff;
+text-shadow: 2px 2px #1e252b;
+}
+
+
+#header-title {
+display: flex;
+justify-content: center;
+flex-direction: column;
+
 
 }
+
 
 #logga {
-  width: 75px;
-  height: 75px;
+width: 75px;
+height: 75px;
 }
+
+
+#header-title button {
+padding: 10px 40px;
+margin: auto;
+border-radius: 4px;
+background-color: var(--primarybutton);
+color:#fff;
+border: 1px solid #fff;
+}
+
+
+#header-title button:hover{
+background-color:#fff;
+color:var(--primarybutton);
+}
+
+
+
 
 ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  padding-left: 0;
-  max-width: 1080px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin: auto;
+padding-left: 0;
+max-width: 1080px;
 }
 
+
 nav ul li {
-  list-style-type: none;
+list-style-type: none;
 }
+
 
 h1,
 h2,
 h3 {
-  font-family: var(--titlefont);
-  font-weight: 300;
+font-family: var(--titlefont);
+font-weight: 300;
 }
 
+
 p {
-  font-family: var(--secondaryfont);
+font-family: var(--secondaryfont);
 }
