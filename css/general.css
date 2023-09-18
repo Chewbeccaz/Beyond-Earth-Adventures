@@ -55,7 +55,13 @@ header h1 {
   height: 75px;
 }
 
-#header-title button {
+.btn-container {
+display: flex;
+justify-content: center;
+height:100px;
+}
+
+#primary-btn {
   padding: 10px 40px;
   margin: auto;
   border-radius: 4px;
@@ -64,9 +70,11 @@ header h1 {
   border: 1px solid #fff;
 }
 
-#header-title button:hover {
-  background-color: #fff;
+#primary-btn:hover {
+  background-color: var(--mainbg);
   color: var(--primarybutton);
+  border: 1px solid var(--primarybutton);
+  border-radius: 4px;
 }
 
 .search-container {
