@@ -8,15 +8,25 @@
   --footercolor: #1e252b;
   --primarybutton: #184889;
   --secondarybutton: #6371b6;
-  --footerfontcolor:#fff; 
+  --primaryfontcolor: rgb(29, 29, 29);
+  --footerfontcolor: #fff;
   --primaryfont: "Roboto Serif", serif;
   --secondaryfont: "Inter", sans-serif;
-  
 }
 
 body {
   background-color: var(--mainbg);
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryfontcolor);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--primarybutton);
 }
 
 nav {
@@ -56,9 +66,9 @@ header h1 {
 }
 
 .btn-container {
-display: flex;
-justify-content: center;
-height:100px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
 }
 
 #primary-btn {
@@ -186,24 +196,23 @@ p {
   transition: 0.5s;
 }
 
-footer{
-    background-color:var(--footercolor);
-    color: var(--footerfontcolor);
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    align-items: center;
+footer {
+  background-color: var(--footercolor);
+  color: var(--footerfontcolor);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
-#copyright-txt{
-    grid-column: 2/3;
+#copyright-txt {
+  grid-column: 2/3;
 }
 
-#footer-logo-container{
-    grid-column: 3/4;
+#footer-logo-container {
+  grid-column: 3/4;
 }
 
-#footer-txt2{
-    grid-column: 4/5;
+#footer-txt2 {
+  grid-column: 4/5;
 }
-
