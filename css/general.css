@@ -8,8 +8,10 @@
   --footercolor: #1e252b;
   --primarybutton: #184889;
   --secondarybutton: #6371b6;
+  --footerfontcolor:#fff; 
   --primaryfont: "Roboto Serif", serif;
   --secondaryfont: "Inter", sans-serif;
+  
 }
 
 body {
@@ -48,7 +50,7 @@ header h1 {
   flex-direction: column;
 }
 
-#logga {
+.logga {
   width: 75px;
   height: 75px;
 }
@@ -175,3 +177,25 @@ p {
   width: 500px;
   transition: 0.5s;
 }
+
+footer{
+    background-color:var(--footercolor);
+    color: var(--footerfontcolor);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#copyright-txt{
+    grid-column: 2/3;
+}
+
+#footer-logo-container{
+    grid-column: 3/4;
+}
+
+#footer-txt2{
+    grid-column: 4/5;
+}
+
