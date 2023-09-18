@@ -81,8 +81,13 @@ header h1 {
   height: 40px;
   border-radius: 10px;
   border: 2px solid #fff;
-  background-color: #ffffff59;
-  color: rgb(0, 0, 0);
+  background-color: #ffffff8e;
+  color: #153a6e;
+}
+
+#header-searchbar::placeholder {
+  color: black;
+  opacity: 0.5;
 }
 
 #searchicon {
