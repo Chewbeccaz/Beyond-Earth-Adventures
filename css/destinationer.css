@@ -153,9 +153,6 @@ h2{
   color: #fff;
   font-family: var(--secondaryfont);
   color: var(--primaryfontcolor);
-
-
-
 }
 
 #box-container { 
@@ -165,7 +162,6 @@ h2{
   justify-content: center;
   gap: 75px;
 }
-
 
 #box1,
 #box2,
@@ -192,7 +188,6 @@ h2{
   background-image: url(../img/månen1.png);
   background-size: cover;
 }
-
 
 .box-wraper:hover #box1 
 {
@@ -234,21 +229,78 @@ h2{
   font-size: large;
   color: white;
   align-self: center;
-  top: 150px;
+  top: 130px;
   text-align: center;
   width: 400px;
   opacity: 0%;
   transition: 0.5s;
 }
 
-
 .box-wraper:hover #text-box{
   opacity: 100%;
   transition: 1s;
-
 }
 
 /* ------------------------------------- */
+
+/* Dividing page */
+
+#section-divider{
+  margin-left: 10%;
+  margin-top: 2px;
+  margin-bottom: 100px;
+  width: 80%;
+  display: inline-flex;
+}
+
+#divider-box1, #divider-box5{
+  height: 6px;
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+}
+#divider-box2, #divider-box4{
+  height: 6px;
+  width: 12px;
+  margin: 0 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#divider-box3{
+  height: 6px;
+  width: 200px;
+  margin: 0 10px;
+  background-color: black;
+  border-radius: 20px;
+}
+/* ------------------------------------- */
+
+/* main content display card */
+
+#box-container2{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+
+#box-container2 #box2:active{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+
+#box-container3{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
 
 footer {
   background-color: var(--footercolor);
