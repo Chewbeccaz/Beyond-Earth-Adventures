@@ -191,7 +191,56 @@ p {
 /*flexbox*/
 
 
+/*vår vision text 1 och 2, månbild och solbild*/
+#img-moontravels, 
+#img-thesun      {
+  width: 350px;
+}
 
+#ourvision-text, 
+#ourvision2-text {
+  width: 380px;
+  height: 320px;
+}
+
+#ourvision-text, 
+#ourvision2-text,
+#img-moontravels, 
+#img-thesun  {
+  border-radius: 5px;
+}
+
+#ourvision-text, 
+#img-moontravels {
+  padding-bottom: 30px;
+} 
+
+#ourvision-wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 70px;
+  justify-items: center;
+  align-items: center;
+  }
+  
+#ourvision-text {
+  grid-column: 4/5;
+  }
+
+#ourvision-moon-img {
+  grid-column: 5/6;
+  }
+  
+#ourvision2-text {
+  grid-column: 5/6;
+  grid-row: 2/2;
+  }
+  
+#ourvision-sun-img {
+  grid-column: 4/5;
+  grid-row: 2/2;
+  }
 
 
 
