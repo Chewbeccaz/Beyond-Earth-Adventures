@@ -285,8 +285,11 @@ h2{
   justify-content: center;
   gap: 75px;
 }
+#box1-click{
+  cursor: pointer;
+}
 
-#box-container2 #box2:active{
+#box-container2{
   height: 400px;
   width: 100%;
   display: flex;
