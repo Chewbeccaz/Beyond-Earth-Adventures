@@ -19,6 +19,7 @@ body {
   margin: 0;
 }
 
+/*header start*/
 a {
   text-decoration: none;
   color: var(--primaryfontcolor);
@@ -143,58 +144,56 @@ p {
   font-family: var(--secondaryfont);
 }
 
-#box-container {
-  background-color: transparent;
-  height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 75px;
+/*header-end*/
+
+
+/*main-content start*/
+#img-familyphoto {
+  width: 830px;
+  margin-top: 100px;
+  border-radius: 5px;
 }
 
-.box-text {
-  background-color: #ffffff98;
-  border-radius: 0 0 10px 10px;
-  height: 0px;
-  padding: 0 5px 0 5px;
+#info-aboutus-text {
+  width: 810px;
+  margin-top: 40px;
 }
 
-#box1,
-#box2,
-#box3 {
+/*familyphoto, infotext, knapp, */
+#section-wrapper1 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: end;
-  width: 400px;
-  height: 300px;
-  margin-top: -40px;
-  border-radius: 10px;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
-  transition: 0.5s;
-}
+  justify-content: center;
+  align-items: center;
+} 
 
-#box1 {
-  background-image: url(../img/wonderland2.png);
-  background-size: cover;
+/*flexbox*/
+/* kontakta-oss knapp*/
+#btn-aboutus {
+  padding: 10px 40px;
+  margin: 60px 60px 80px 60px;
+  border-radius: 4px;
+  background-color: var(--navbarcolor);
+  color: #184889;
+  border: 1px solid #184889;
 }
+#btn-aboutus:hover{
+  background-color: var(--primarybutton);
+  color:var(--navbarcolor);
+  border-radius: 4px;
+  border: 1px solid #184889;
+  }  
 
-#box2 {
-  background-image: url(../img/helvetet.png);
-  background-size: cover;
+#btn-aboutus {
+  margin: 80px 0 110px 0;
 }
+/*flexbox*/
 
-#box3 {
-  background-image: url(../img/månen1.png);
-  background-size: cover;
-}
 
-#box1:hover,
-#box2:hover,
-#box3:hover {
-  height: 400px;
-  width: 500px;
-  transition: 0.5s;
-}
+
+
+
 
 footer {
   background-color: var(--footercolor);
