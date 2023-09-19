@@ -242,6 +242,43 @@ p {
   grid-row: 2/2;
   }
 
+/*blå infoboxar*/
+#box-container2{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  margin-top: 250px;
+}
+
+#box1, #box2, #box3{
+  width: 400px;
+  height: 300px;
+  margin-top: -40px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
+  background-size: cover;
+  background-color: #184889;
+}
+
+#numbers, #bigletters {
+  color: var(--navbarcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#numbers {
+  font-size: 80px;
+  /* margin: 0; */
+}
+
+#bigletters {
+  font-size: 30px;
+}
+
+/*main-content end*/ 
 
 
 footer {
