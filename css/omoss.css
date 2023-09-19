@@ -235,11 +235,14 @@ p {
 #ourvision2-text {
   grid-column: 5/6;
   grid-row: 2/2;
+  margin-left: 30px;
   }
+    
   
 #ourvision-sun-img {
   grid-column: 4/5;
   grid-row: 2/2;
+  margin-left: -28px;
   }
 
 /*blå infoboxar*/
