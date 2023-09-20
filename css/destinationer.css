@@ -4,7 +4,7 @@
 
 body {
   background-color: var(--mainbg);
-  margin: 0;
+  margin: 0px;
 }
 
 a {
@@ -165,6 +165,21 @@ h2{
   transition: 0.5s;
 }
 
+#content-box1,
+#content-box2,
+#content-box3,
+#content-box4,
+#content-box5,
+#content-box6 {
+  margin-top: 50px;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
+  transition: 0.5s;
+}
+
+
 #box1 {
   background-image: url(../img/wonderland2.png);
   background-size: cover;
@@ -284,9 +299,6 @@ h2{
   justify-content: center;
   gap: 75px;
 }
-#box1-click{
-  cursor: pointer;
-}
 
 #box-container2{
   height: 400px;
@@ -324,4 +336,32 @@ footer {
 
 #footer-txt2 {
   grid-column: 4/5;
+}
+
+
+@media screen and (max-width: 900px) {
+  #box-container2{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    gap: 75px;
+  }
+
+#box-container{
+  overflow: hidden;
+}
+
+#box1,
+#box2,
+#box3 {
+  margin-top: 50px;
+  width: 100px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
+  transition: 0.5s;
+}
 }

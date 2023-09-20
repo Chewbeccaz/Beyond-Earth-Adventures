@@ -11,6 +11,7 @@
     transition: 1s;
     border-radius: 20px;
     display: flex;
+    z-index: 999;
 }
 
 #chat-input{
@@ -25,7 +26,6 @@
     transition: 1s;
     padding: 5px;
     bottom: 0;
-    
 }
 
 #chat:hover{
@@ -67,9 +67,7 @@
     margin: auto;
     height: 0;
     opacity: 0;
-    transition: 0.5s;
-  
-    
+    transition: 0.5s; 
 }
 
 #dropdown-wrap{
@@ -80,7 +78,7 @@
 #logga-ner{
     position: absolute;
     height: 75px;
-    top: 0;
+    top: 10px;
     transition: 1s;
 }
 
@@ -89,8 +87,8 @@
 }
 
 .logga:hover ~ #nav-dropdown{
-    transition: 1s;
     height: 400px;
+    transition: 1s;
 }
 
 .logga:hover ~ #nav-dropdown a{
