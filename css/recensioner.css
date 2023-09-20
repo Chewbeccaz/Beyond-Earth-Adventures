@@ -1,18 +1,4 @@
-/* ROOT */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
-
-:root {
-  --mainbg: #eaeaed;
-  --navbarcolor: #ffffff;
-  --footercolor: #1e252b;
-  --primarybutton: #184889;
-  --secondarybutton: #6371b6;
-  --primaryfontcolor: rgb(29, 29, 29);
-  --footerfontcolor: #fff;
-  --primaryfont: "Roboto Serif", serif;
-  --secondaryfont: "Inter", sans-serif;
-}
 
 body {
   background-color: var(--mainbg);
@@ -33,7 +19,6 @@ nav {
   position: sticky;
   width: 100%;
   background-color: var(--navbarcolor);
-  /* height: 100px; */
   font-family: var(--secondaryfont);
 }
 
@@ -41,7 +26,7 @@ header {
   background-image: url("../img/plane.png");
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,15 +34,23 @@ header {
 }
 
 header h1 {
-  font-size: 72px;
+  font-size: 7vw;
+  color: #fff;
+  text-shadow: 2px 2px #1e252b;
+  margin-bottom:-20px;
+}
+
+header h2 {
+  font-size: 3vw;
   color: #fff;
   text-shadow: 2px 2px #1e252b;
 }
 
 #header-title {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items:center; 
 }
 
 .logga {
@@ -87,38 +80,6 @@ header h1 {
   border-radius: 4px;
 }
 
-.search-container {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#header-searchbar {
-  font-size: 18px;
-  padding-left: 10px;
-  width: 535px;
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  background-color: #ffffff8e;
-  color: #153a6e;
-}
-
-#header-searchbar::placeholder {
-  color: black;
-  opacity: 0.5;
-}
-
-#searchicon {
-  position: absolute;
-  /* right: 35px; */
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  padding-right: 15px;
-}
-
 ul {
   display: flex;
   justify-content: space-around;
@@ -139,61 +100,84 @@ h3 {
   font-weight: 300;
 }
 
+h3 {
+  font-size: 28px;
+}
+
 p {
   font-family: var(--secondaryfont);
 }
 
 #box-container {
-  background-color: transparent;
-  height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 75px;
+  height: 800px;
+  padding-top:50px;
+	column-gap: 2%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#box-container img{
+position: relative;
+bottom: -100px;
+border-radius: 10px;
+box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
 }
 
 .box-text {
-  background-color: #ffffff98;
+  background-color: #ffffff98; 
   border-radius: 0 0 10px 10px;
-  height: 0px;
-  padding: 0 5px 0 5px;
+  text-align: center;
+  position: relative;
+  height: 100px;
+  color: var(--primaryfontcolor);
+  display: flex;
+  align-items: center;
+  /*För att se till att den är dold innan hover.*/
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box-text p {
+  padding:5px;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.box-wrapper h3 {
+  padding: 10px;
+  margin: 0; 
+}
+
+.box-wrapper:hover .box-text{
+  opacity:1;
 }
 
 #box1,
 #box2,
-#box3 {
+#box3,
+#box4,
+#box5,
+#box6 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 400px;
-  height: 300px;
-  margin-top: -40px;
-  border-radius: 10px;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
-  transition: 0.5s;
-}
-
-#box1 {
-  background-image: url(../img/wonderland2.png);
-  background-size: cover;
-}
-
-#box2 {
-  background-image: url(../img/helvetet.png);
-  background-size: cover;
-}
-
-#box3 {
-  background-image: url(../img/månen1.png);
-  background-size: cover;
+  width: 300px;
+  height: 230px;
+  margin-bottom:30px;
 }
 
 #box1:hover,
 #box2:hover,
-#box3:hover {
-  height: 400px;
-  width: 500px;
-  transition: 0.5s;
+#box3:hover,
+#box4:hover,
+#box5:hover,
+#box6:hover{
+  scale: 1.2;
 }
 
 footer {
@@ -215,4 +199,61 @@ footer {
 
 #footer-txt2 {
   grid-column: 4/5;
+}
+
+/*MEDIA QUERYS. TABLET OCH MOBIL.*/
+@media screen and (max-width: 960px) {
+  
+  header{
+    height:400px;
+  }
+
+  #box-container{
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    margin-bottom:40px;
+  }
+  #box1,
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6 {
+    margin-bottom:40px;  
+  }
+.box-text {
+  background-color: #ffffff; 
+  opacity: 1;
+  margin-top:95px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
+}
+
+.box-wrapper h3 {
+margin-bottom:90px;
+}
+
+#box-container{
+  padding-top:80px;
+}
+}
+
+@media screen and (max-width: 700px) {
+
+  header{
+    height:250px;
+  }
+  header h1 {
+    margin-bottom:0px;
+  }
+
+  #box-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+/*MediaQuery för större skärmar*/
+@media screen and (min-width: 1440px) {
+#box-container{
+padding:150px;
+}
 }
