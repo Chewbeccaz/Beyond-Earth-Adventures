@@ -149,7 +149,7 @@ p {
 }
 
 /*familyphoto, infotext, knapp, */
-#section-wrapper1 {
+#section-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
