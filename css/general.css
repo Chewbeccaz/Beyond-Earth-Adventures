@@ -2,9 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
 
+
+
+
 body {
-  background-color: var(--mainbg);
-  margin: 0;
+  background-color: var(--mainbg); 
+  margin: 0px;
 }
 
 a {
@@ -18,8 +21,9 @@ a:hover {
 }
 
 nav {
-  position: fixed;
+  position: static;
   width: 100%;
+  top: 0;
   background-color: var(--navbarcolor);
   /* height: 100px; */
   font-family: var(--secondaryfont);
