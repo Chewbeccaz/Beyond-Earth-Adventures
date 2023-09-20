@@ -1,6 +1,6 @@
-/* ROOT */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
+
+/* ROOT STYLING */
 
 :root {
   --mainbg: #eaeaed;
@@ -14,9 +14,13 @@
   --secondaryfont: "Inter", sans-serif;
 }
 
+/* BODY STYLING */
+
 body {
+  box-sizing: border-box;
   background-color: var(--mainbg);
   margin: 0;
+  font-family: var(--secondaryfont);
 }
 
 a {
@@ -29,12 +33,33 @@ a:hover {
   color: var(--primarybutton);
 }
 
-nav {
-  position: sticky;
-  width: 100%;
-  background-color: var(--navbarcolor);
-  /* height: 100px; */
-  font-family: var(--secondaryfont);
+hr {
+  max-width: 900px;
+  border: 1px solid var(--footercolor);
+  opacity: 0.35;
+  /* border-radius: 4px; */
+}
+
+#hr {
+  padding-bottom: 45px;
+}
+
+/* NAVBAR STYLING */
+
+#navbar-logo {
+  width: 75px;
+}
+
+.navbar {
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-mobil {
+  display: none;
 }
 
 header {
