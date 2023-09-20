@@ -67,7 +67,6 @@
     margin: auto;
     height: 0;
     opacity: 0;
-    transition: 0.5s; 
 }
 
 #dropdown-wrap{
@@ -78,7 +77,7 @@
 #logga-ner{
     position: absolute;
     height: 75px;
-    top: 10px;
+    top: 3px;
     transition: 1s;
 }
 
