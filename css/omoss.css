@@ -146,7 +146,7 @@ p {
 
 /*header-end*/
 
-
+/*flexbox*/
 /*main-content start*/
 #img-familyphoto {
   width: 830px;
@@ -157,16 +157,18 @@ p {
 #info-aboutus-text {
   width: 810px;
   margin-top: 40px;
+  
 }
 
 /*familyphoto, infotext, knapp, */
 #section-wrapper1 {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 30px 100px 0 100px;
 } 
+/*flexbox*/
 
 /*flexbox*/
 /* kontakta-oss knapp*/
