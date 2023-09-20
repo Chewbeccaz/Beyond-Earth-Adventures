@@ -18,11 +18,12 @@ a:hover {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   width: 100%;
   background-color: var(--navbarcolor);
   /* height: 100px; */
   font-family: var(--secondaryfont);
+  z-index: 3;
 }
 
 header {
@@ -80,6 +81,7 @@ header h1 {
   align-items: end;
   justify-content: center;
   flex-direction: column;
+  background-color: #ffffff8e;
 }
 
 #header-searchbar {
@@ -89,7 +91,7 @@ header h1 {
   height: 40px;
   border-radius: 10px;
   border: 2px solid #fff;
-  background-color: #ffffff8e;
+  background-color: transparent;
   color: #153a6e;
 }
 

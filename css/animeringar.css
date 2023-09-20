@@ -1,0 +1,146 @@
+/* chatbox */
+
+#chat{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: white;
+    transition: 1s;
+    border-radius: 20px;
+    display: flex;
+}
+
+#chat-input{
+    position: absolute;
+    visibility: hidden;
+    width: 75px;
+    margin: 5px;
+    transition: 1s;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    transition: 1s;
+    padding: 5px;
+    bottom: 0;
+    
+}
+
+#chat:hover{
+    width: 400px;
+    height: 400px;
+    transition: 1s;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+#chat:hover #chat-input{
+    visibility: visible;
+    width: 372px;
+    transition: 1s;
+    border: 5px solid black;
+}
+
+/* ----------------------------- */
+
+
+/* animering dropdown */
+
+#nav-dropdown{
+    position: absolute;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    width: 300px;
+    height: 0px;
+    transition: 1s;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#nav-dropdown a{
+    background-color: white;
+    margin: auto;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s;
+  
+    
+}
+
+#dropdown-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+#logga-ner{
+    position: absolute;
+    height: 75px;
+    top: 0;
+    transition: 1s;
+}
+
+.logga{
+    z-index: 3;
+}
+
+.logga:hover ~ #nav-dropdown{
+    transition: 1s;
+    height: 400px;
+}
+
+.logga:hover ~ #nav-dropdown a{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.logga:hover ~ #logga-ner{
+    top: 420px;
+    transition: 1s;
+}
+
+
+/* ------------------------------- */
+
+
+
+/* animering för text ska skrivas ut */
+
+.search-container{
+   position: relative;
+   border-radius: 10px;
+    
+}
+
+#animering-text{
+    visibility: visible;
+    position: absolute;
+    left: 2%;
+    width: 280px;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    animation: 
+    typing 4s;
+}
+
+#header-searchbar{
+    z-index: 2;
+}
+
+#header-searchbar:focus ~ #animering-text{
+    visibility: hidden;
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+/* ------------------------- */
+
