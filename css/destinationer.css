@@ -2,18 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
 
-:root {
-  --mainbg: #eaeaed;
-  --navbarcolor: #ffffff;
-  --footercolor: #1e252b;
-  --primarybutton: #184889;
-  --secondarybutton: #6371b6;
-  --primaryfontcolor: rgb(29, 29, 29);
-  --footerfontcolor: #fff;
-  --primaryfont: "Roboto Serif", serif;
-  --secondaryfont: "Inter", sans-serif;
-}
-
 body {
   background-color: var(--mainbg);
   margin: 0;
@@ -52,6 +40,8 @@ header h1 {
   font-size: 72px;
   color: #fff;
   text-shadow: 2px 2px #1e252b;
+  font-family: var(--primaryfont);
+  font-weight: 300;
 }
 
 #header-title {
