@@ -172,3 +172,44 @@ input:hover[type="submit"] {
   height: auto;
 }
 
+/* MediaQuery Tablet */
+
+
+@media (max-width: 820px) {
+
+  .kontakta-oss {
+    width: 700px;
+    padding: 20px 40px 20px 40px;
+    margin-top: 40px;
+  }
+
+  .wrapper {
+    width: 700px;
+    padding: 0 40px 20px 40px;
+  }
+
+}
+
+/* MediaQuery mobile */
+
+@media (max-width: 767px) {
+  .kontakta-oss {
+    width: 450px;
+    padding: 20px 40px 20px 40px;
+    margin-top: 40px;
+  }
+
+  .wrapper {
+    width: 450px;
+    padding: 0 40px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  #locations {
+    width: 200px;
+    margin-top: 40px;
+    margin-right: 120px;
+  }
+}
