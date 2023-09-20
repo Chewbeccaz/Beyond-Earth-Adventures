@@ -2,20 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
 
-:root {
-  --mainbg: #eaeaed;
-  --navbarcolor: #ffffff;
-  --footercolor: #1e252b;
-  --primarybutton: #184889;
-  --secondarybutton: #6371b6;
-  --primaryfontcolor: rgb(29, 29, 29);
-  --footerfontcolor: #fff;
-  --primaryfont: "Roboto Serif", serif;
-  --secondaryfont: "Inter", sans-serif;
-}
 
 body {
-  background-color: var(--mainbg);
+  background-color: ffffff;
   margin: 0;
 }
 
@@ -33,25 +22,14 @@ nav {
   position: sticky;
   width: 100%;
   background-color: var(--navbarcolor);
-  /* height: 100px; */
-  font-family: var(--secondaryfont);
-}
 
-header {
-  background-image: url("../img/plane.png");
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: var(--secondaryfont);
 }
 
 header h1 {
   font-size: 72px;
-  color: #fff;
-  text-shadow: 2px 2px #1e252b;
+  color: var(--primaryfont);
+
 }
 
 #header-title {
@@ -63,60 +41,6 @@ header h1 {
 .logga {
   width: 75px;
   height: 75px;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  height: 100px;
-}
-
-#primary-btn {
-  padding: 10px 40px;
-  margin: auto;
-  border-radius: 4px;
-  background-color: var(--primarybutton);
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-#primary-btn:hover {
-  background-color: var(--mainbg);
-  color: var(--primarybutton);
-  border: 1px solid var(--primarybutton);
-  border-radius: 4px;
-}
-
-.search-container {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#header-searchbar {
-  font-size: 18px;
-  padding-left: 10px;
-  width: 535px;
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  background-color: #ffffff8e;
-  color: #153a6e;
-}
-
-#header-searchbar::placeholder {
-  color: black;
-  opacity: 0.5;
-}
-
-#searchicon {
-  position: absolute;
-  /* right: 35px; */
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  padding-right: 15px;
 }
 
 ul {
@@ -143,59 +67,6 @@ p {
   font-family: var(--secondaryfont);
 }
 
-#box-container {
-  background-color: transparent;
-  height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 75px;
-}
-
-.box-text {
-  background-color: #ffffff98;
-  border-radius: 0 0 10px 10px;
-  height: 0px;
-  padding: 0 5px 0 5px;
-}
-
-#box1,
-#box2,
-#box3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  width: 400px;
-  height: 300px;
-  margin-top: -40px;
-  border-radius: 10px;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
-  transition: 0.5s;
-}
-
-#box1 {
-  background-image: url(../img/wonderland2.png);
-  background-size: cover;
-}
-
-#box2 {
-  background-image: url(../img/helvetet.png);
-  background-size: cover;
-}
-
-#box3 {
-  background-image: url(../img/månen1.png);
-  background-size: cover;
-}
-
-#box1:hover,
-#box2:hover,
-#box3:hover {
-  height: 400px;
-  width: 500px;
-  transition: 0.5s;
-}
-
 footer {
   background-color: var(--footercolor);
   color: var(--footerfontcolor);
@@ -216,3 +87,88 @@ footer {
 #footer-txt2 {
   grid-column: 4/5;
 }
+
+header {
+  background-image: url("../img/plane.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 72px;
+  color: #fff;
+  text-shadow: 2px 2px #1e252b;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+
+/* Börja härifrån */
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 800px;
+  background-color: var(--mainbg);
+  font-family: var(--primaryfont);
+  color: #1e252b;
+  padding: 0 40px 20px 40px;
+  margin-bottom: 40px;
+}
+
+
+.flex-text {
+  width: 400px;
+  align-items: start;
+}
+
+.kontakta-oss {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: start;
+  align-self: flex-start;
+  width: 800px;
+  padding: 20px 40px 20px 40px;
+  margin-top: 40px;
+  background-color: var(--mainbg);
+  font-family: var(--primaryfont);
+  color: #1e252b;
+}
+
+input {
+  border-radius: 4px;
+  padding: 5px 5px;
+  margin: 2px 0;
+}
+
+
+input[type="submit"]{
+  padding: 10px 40px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: var(--primarybutton);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+input:hover[type="submit"] {
+  background-color: var(--mainbg);
+  color: var(--primarybutton);
+  border: 1px solid var(--primarybutton);
+  border-radius: 4px;
+}
+
+#locations {
+  width: 400px;
+  height: auto;
+}
+
