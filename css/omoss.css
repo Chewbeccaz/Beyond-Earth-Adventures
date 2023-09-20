@@ -353,23 +353,15 @@ footer {
   /*flexbox*/
 
   
-  #ourvision-wrapper {    
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  gap: 20px;
-  justify-items: center;
+  #ourvision-wrapper {   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  }
-  
-  #ourvision-text,
-  #img-moontravels,
-  #ourvision2-text,
-  #img-thesun    {
-    border: 1px solid red;
-    grid-column: 1;
-    margin: 0;
-  }
+  margin-bottom: 240px;
+}
+    
+ 
 
   /*flexbox*/
   #box-container2 {
