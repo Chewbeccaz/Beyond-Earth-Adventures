@@ -167,3 +167,32 @@ h3 {
 p {
   font-family: var(--secondaryfont);
 }
+
+/* FOOTER */
+
+footer {
+  height: 60px;
+  background-color: var(--footercolor);
+  font-size: 14px;
+  color: var(--footerfontcolor);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+footer img {
+  width: 45px;
+}
+
+#copyright-txt {
+  grid-column: 2/3;
+}
+
+#footer-logo-container {
+  grid-column: 3/4;
+}
+
+#footer-txt2 {
+  grid-column: 4/5;
+}
