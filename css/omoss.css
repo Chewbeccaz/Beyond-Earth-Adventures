@@ -272,8 +272,6 @@ p {
 }
 
 /*main-content end*/ 
-
-
 footer {
   background-color: var(--footercolor);
   color: var(--footerfontcolor);
@@ -300,7 +298,6 @@ footer {
 } */
 
 @media screen and (max-width: 950px) {
-
   #img-familyphoto {
     width: 780px;
     margin-top: 100px;
@@ -312,13 +309,10 @@ footer {
     margin-top: 20px;
     }
 
-
   #ourvision-wrapper {
-      gap: 40px;
-      padding: 5px;
-      justify-items: center;
-      align-items: center;
-      }
+    gap: 40px;
+    padding: 5px;
+    }
 
   #ourvision-text {
     grid-column: 1/2;
@@ -344,6 +338,33 @@ footer {
 }
 
 
-/* @media screen and (max-width: 767px) {
 
+
+@media screen and (max-width: 767px) {
+  #img-familyphoto {
+    width: 360px;
+    margin-top: 15px;
+    }
+
+  /* vill centrera hur gör jag*/
+  #info-aboutus-text {
+    width: 340px;
+    margin-top: 5px;
+    }
+
+  /* #section-wrapper1 {
   } */
+
+    /*funkar ej*/
+  #ourvision-wrapper {    
+    grid-template-columns: 1fr;
+  }
+  
+  #ourvision-text, 
+  #ourvision2-text,
+  #img-moontravels, 
+  #img-thesun  {
+    grid-column: 1;
+  }
+  /*funkar ej*/
+}
