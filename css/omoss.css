@@ -101,7 +101,6 @@ header h1 {
 
 #searchicon {
   position: absolute;
-  /* right: 35px; */
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -131,11 +130,11 @@ h3 {
 p {
   font-family: var(--secondaryfont);
 }
-
 /*header-end*/
 
-/*flexbox*/
+
 /*main-content start*/
+/*flexbox*/
 #img-familyphoto {
   width: 830px;
   margin-top: 100px;
@@ -145,7 +144,6 @@ p {
 #info-aboutus-text {
   width: 810px;
   margin-top: 40px;
-  
 }
 
 /*familyphoto, infotext, knapp, */
@@ -156,10 +154,8 @@ p {
   align-items: center;
   margin: 30px 100px 0 100px;
 } 
-/*flexbox*/
 
-/*flexbox*/
-/* kontakta-oss knapp*/
+/*kontakta-oss knapp*/
 #btn-aboutus {
   padding: 10px 40px;
   margin: 60px 60px 80px 60px;
@@ -178,8 +174,6 @@ p {
 #btn-aboutus {
   margin: 80px 0 110px 0;
 }
-/*flexbox*/
-
 
 /*vår vision text 1 och 2, månbild och solbild*/
 #img-moontravels, 
@@ -223,16 +217,15 @@ p {
   }
   
 #ourvision2-text {
-  grid-column: 5/6;
-  grid-row: 2/2;
-  margin-left: 30px;
-  }
-    
-  
-#ourvision-sun-img {
   grid-column: 4/5;
   grid-row: 2/2;
   margin-left: -28px;
+  }
+  
+#ourvision-sun-img {
+  grid-column: 5/6;
+  grid-row: 2/2;
+  margin-left: 30px;
   }
 
 /*blå infoboxar*/
@@ -264,7 +257,6 @@ p {
 
 #numbers {
   font-size: 80px;
-  /* margin: 0; */
 }
 
 #bigletters {
@@ -293,14 +285,10 @@ footer {
   grid-column: 4/5;
 }
 
-/* @media screen and (max-width: 1200px) {
-    
-} */
-
 @media screen and (max-width: 950px) {
   #img-familyphoto {
     width: 780px;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 5px;
     }
 
@@ -335,36 +323,61 @@ footer {
     margin-left: -3px;
     }
 
+  /*flexbox*/
+  #box-container2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 240px;
+  }
+  /*flexbox*/
 }
 
-
-
-
 @media screen and (max-width: 767px) {
+  /*flexbox*/
   #img-familyphoto {
-    width: 360px;
+    width: 410px;
     margin-top: 15px;
-    }
+  }
 
-  /* vill centrera hur gör jag*/
+  /*vill centrera hur gör jag*/
   #info-aboutus-text {
-    width: 340px;
-    margin-top: 5px;
-    }
+    width: 390px;
+    margin-top: 30px;
+  }
 
-  /* #section-wrapper1 {
-  } */
+  #btn-aboutus {
+    width: 370px;
+  }
+  /*flexbox*/
 
-    /*funkar ej*/
+  
   #ourvision-wrapper {    
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
   }
   
-  #ourvision-text, 
+  #ourvision-text,
+  #img-moontravels,
   #ourvision2-text,
-  #img-moontravels, 
-  #img-thesun  {
+  #img-thesun    {
+    border: 1px solid red;
     grid-column: 1;
+    margin: 0;
   }
-  /*funkar ej*/
+
+  /*flexbox*/
+  #box-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 240px;
+  }
+  /*flexbox*/
 }
