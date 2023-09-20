@@ -38,7 +38,7 @@ header {
 }
 
 header h1 {
-  font-size: 72px;
+  font-size: 7vw;
   color: #fff;
   text-shadow: 2px 2px #1e252b;
 }
@@ -139,7 +139,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 75px;
+  gap: 5%;
 }
 
 .box-text {
@@ -205,4 +205,24 @@ footer {
 
 #footer-txt2 {
   grid-column: 4/5;
+}
+
+/*MEDIA QUERYS TABLET*/
+@media screen and (max-width: 820px) {
+#box1,
+#box2,
+#box3{
+  width: 215px;
+  height: 215px;
+}
+#box-container {
+height:400px;
+}
+}
+
+/*MEDIA QUERYS TABLET*/
+@media screen and (max-width: 767px) {
+
+
+  
 }
