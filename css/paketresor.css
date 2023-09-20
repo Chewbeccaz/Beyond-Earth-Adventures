@@ -86,3 +86,84 @@ header h1 {
   justify-content: center;
   flex-direction: column;
 }
+
+/* MAIN STYLING */
+
+.paket-container {
+  padding: 0px 45px 60px 45px;
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  margin: auto;
+  align-items: center;
+  max-width: 900px;
+}
+
+.paket-text {
+  width: 100%;
+}
+
+#paket-header-text {
+  max-width: 900px;
+  padding: 25px 45px 25px 45px;
+  margin: auto;
+}
+
+#paket-h2 {
+  margin-top: 5px;
+}
+
+#paket-h3 {
+  margin-bottom: 0px;
+}
+
+.paket-text,
+#paket-header-text p {
+  line-height: 24px;
+}
+
+.paket-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#price-text {
+  display: inline;
+  vertical-align: middle;
+  background-color: var(--secondarybutton);
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #fff;
+}
+
+#primary-btn {
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: var(--secondarybutton);
+  border: 1px solid var(--secondarybutton);
+  cursor: pointer;
+}
+
+#primary-btn:hover {
+  background-color: var(--secondarybutton);
+  color: #fff;
+  border: 1px solid var(--secondarybutton);
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--primaryfont);
+  font-weight: 300;
+}
+
+p {
+  font-family: var(--secondaryfont);
+}
