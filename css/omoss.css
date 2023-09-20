@@ -2,18 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
 
-:root {
-  --mainbg: #eaeaed;
-  --navbarcolor: #ffffff;
-  --footercolor: #1e252b;
-  --primarybutton: #184889;
-  --secondarybutton: #6371b6;
-  --primaryfontcolor: rgb(29, 29, 29);
-  --footerfontcolor: #fff;
-  --primaryfont: "Roboto Serif", serif;
-  --secondaryfont: "Inter", sans-serif;
-}
-
 body {
   background-color: var(--mainbg);
   margin: 0;
@@ -306,3 +294,56 @@ footer {
 #footer-txt2 {
   grid-column: 4/5;
 }
+
+/* @media screen and (max-width: 1200px) {
+    
+} */
+
+@media screen and (max-width: 950px) {
+
+  #img-familyphoto {
+    width: 780px;
+    margin-top: 100px;
+    border-radius: 5px;
+    }
+
+  #info-aboutus-text {
+    width: 740px;
+    margin-top: 20px;
+    }
+
+
+  #ourvision-wrapper {
+      gap: 40px;
+      padding: 5px;
+      justify-items: center;
+      align-items: center;
+      }
+
+  #ourvision-text {
+    grid-column: 1/2;
+    margin-left: 20px;
+    }
+  
+  #ourvision-moon-img {
+    grid-column: 2/3;
+    }
+    
+  #ourvision2-text {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-left: 20px;
+    }
+    
+  #ourvision-sun-img {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    margin-left: -3px;
+    }
+
+}
+
+
+/* @media screen and (max-width: 767px) {
+
+  } */
