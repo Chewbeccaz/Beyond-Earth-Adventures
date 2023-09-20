@@ -18,11 +18,12 @@ a:hover {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   width: 100%;
   background-color: var(--navbarcolor);
   /* height: 100px; */
   font-family: var(--secondaryfont);
+  z-index: 999;
 }
 
 header {
@@ -136,7 +137,7 @@ p {
 
 h2{
   width: 100%;
-  margin: 20px auto;
+  margin: 100px 20px auto;
   display: flex;
   justify-content: center;
   font-size: 40px;
@@ -243,6 +244,14 @@ h2{
   display: inline-flex;
 }
 
+#section-divider2{
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 80%;
+  display: inline-flex;
+}
+
 #divider-box1, #divider-box5{
   height: 6px;
   width: 100%;
@@ -296,6 +305,7 @@ h2{
 }
 
 footer {
+  margin-top: 50px;
   background-color: var(--footercolor);
   color: var(--footerfontcolor);
   display: grid;
