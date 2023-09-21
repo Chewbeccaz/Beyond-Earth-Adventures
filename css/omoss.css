@@ -298,10 +298,13 @@ footer {
   grid-column: 4/5;
 }
 
+
+/* ---------- MEDIA QUERIES ------------*/
+
 @media screen and (max-width: 950px) {
   #img-familyphoto {
     width: 780px;
-    margin-top: 50px;
+    margin-top: 60px;
     border-radius: 5px;
     }
 
@@ -346,6 +349,7 @@ footer {
 
   #btn-aboutus {
     width: 270px;
+    margin-top: 65px; 
   }
 
   /*flexbox*/
@@ -362,17 +366,17 @@ footer {
 @media screen and (max-width: 767px) {
   #img-familyphoto {
     width: 440px;
-    margin-top: 50px;
+    margin-top: 54px;
   }
 
   #info-aboutus-text {
     width: 390px;
-    margin-top: 40px;
+    margin-top: 38px;
   }
 
   #btn-aboutus {
     width: 370px;
-    margin-top: 90px; 
+    margin-top: 80px; 
   }
   
   #ourvision-wrapper {   
@@ -388,7 +392,12 @@ hr {
   border: 1px solid var(--footercolor);
   opacity: 0.35;
   margin-bottom: 80px;
-  margin-top: 45px;
+  margin-top: 15px;
+}
+
+#ourvision-text,
+#ourvision2-text {
+  margin-bottom: -32px;
 }
     
   #box-container2 {
@@ -396,7 +405,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 240px 0 300px 0;
+    margin: 310px 0 280px 0;
   }
  
 }
