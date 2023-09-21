@@ -184,13 +184,6 @@ h2{
 }
 
 @media screen and (min-width: 900px) {
-  
-  #nav-wraper{
-    display: none;
-  }
-  #hamburgar-menu{
-    display: none;
-  }
 
   .box-wraper:hover #box1 
   {
