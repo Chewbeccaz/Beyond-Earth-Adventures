@@ -17,10 +17,8 @@
 /* BODY STYLING */
 
 body {
-  box-sizing: border-box;
-  background-color: #fff;
-  margin: 0;
-  font-family: var(--secondaryfont);
+  background-color: var(--mainbg); 
+  margin: 0px;
 }
 
 a {
@@ -33,36 +31,15 @@ a:hover {
   color: var(--primarybutton);
 }
 
-hr {
-  max-width: 900px;
-  border: 1px solid var(--footercolor);
-  opacity: 0.35;
-  /* border-radius: 4px; */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--navbarcolor);
+  /* height: 100px; */
+  font-family: var(--secondaryfont);
+  z-index: 3;
 }
-
-#hr {
-  padding-bottom: 45px;
-}
-
-/* NAVBAR STYLING */
-
-#navbar-logo {
-  width: 75px;
-}
-
-.navbar {
-  max-width: 950px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navbar-mobil {
-  display: none;
-}
-
-/* HEADER STYLING */
 
 header {
   background-image: url("../img/plane.png");
@@ -76,7 +53,7 @@ header {
 }
 
 header h1 {
-  font-size: 72px;
+  font-size: 6vw;
   color: #fff;
   text-shadow: 2px 2px #1e252b;
 }
@@ -85,6 +62,79 @@ header h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.logga {
+  width: 75px;
+  height: 75px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+#primary-btn {
+  padding: 10px 40px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: var(--primarybutton);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#primary-btn:hover {
+  background-color: var(--mainbg);
+  color: var(--primarybutton);
+  border: 1px solid var(--primarybutton);
+  border-radius: 4px;
+}
+
+.search-container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff8e;
+}
+
+#header-searchbar {
+  font-size: 18px;
+  padding-left: 10px;
+  width: 535px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #153a6e;
+}
+
+#header-searchbar::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+
+#searchicon {
+  position: absolute;
+  /* right: 35px; */
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding-left: 0;
+  max-width: 1080px;
+}
+
+nav ul li {
+  list-style-type: none;
 }
 
 /* MAIN STYLING */
@@ -210,6 +260,9 @@ footer img {
 /* TABLET */
 
 @media (max-width: 960px) {
+  #chat{
+    display: none;
+  }
   hr {
     max-width: 75%;
   }
