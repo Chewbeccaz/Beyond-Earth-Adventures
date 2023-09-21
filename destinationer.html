@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
+    <link rel="stylesheet" href="css/navbar-mobil.css">
     <link rel="stylesheet" href="css/animeringar.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
@@ -19,6 +20,7 @@
         <input id="chat-input" type="text" placeholder="Vad behöver du hjälp med?">
       </div>
     </section>
+    
     <nav>
       <ul>
         <li>
@@ -40,6 +42,31 @@
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+    <!-- Navbar mobile -->
+    <div id="nav-wraper">
+      <div id="hamburgar-menu">
+        <input type="checkbox" value="menu"  id="checkbox-click">
+        <label for="checkbox-click"></label>
+        <div class="menu-box"></div>
+        <div class="menu-box"></div>
+        <div class="menu-box"></div>
+        
+
+        <!-- Dropdown mobil -->
+        <ul id="dropdown">
+        <li>Hem</li>
+        <li>Destinationer</li>
+        <li>Paketresor</li>
+        <li>Om oss</li>
+        <li>Kontakt</li>
+        <li>
+          <label for="checkbox-click">X</label>
+        </li>
+        </ul>
+        <!-- -------------------------------- -->
+      </div>
+    </div>
+
     <header>
       <!-- <div id="nav-container"> -->
       <!-- </div> -->
@@ -114,8 +141,6 @@
             bild
           </div>
         </div>
-      </div>
-      <div id="box-container2">
         <div id="content-box4">
           <div class="box-text">
             bild
