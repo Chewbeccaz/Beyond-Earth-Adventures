@@ -202,13 +202,13 @@ input:hover[type="submit"] {
   .wrapper {
     width: 450px;
     padding: 0 40px 20px 40px;
-    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
   }
 
   #locations {
-    width: 200px;
+    width: 250px;
     margin-top: 40px;
     margin-right: 120px;
   }
