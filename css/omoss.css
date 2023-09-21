@@ -133,6 +133,9 @@ p {
 /*header-end*/
 
 
+
+/*-----------------------------------------*/
+
 /*main-content start*/
 /*flexbox*/
 #img-familyphoto {
@@ -142,8 +145,8 @@ p {
 }
 
 #info-aboutus-text {
-  /* width: 810px; */ 
   margin-top: 40px;
+  padding: 0 12px;
 }
 
 /*familyphoto, infotext, knapp, */
@@ -244,17 +247,17 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 75px;
-  margin-top: 250px;
+  margin-top: 120px;
 }
 
 #box1, #box2, #box3{
-  width: 400px;
+  min-width: 400px;
   height: 300px;
   margin-top: -40px;
   border-radius: 10px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
-  background-size: cover;
   background-color: #184889;
 }
 
@@ -312,6 +315,7 @@ footer {
     padding: 5px;
     }
 
+  /*grid*/
   #ourvision-text {
     grid-column: 1/2;
     margin-left: 20px;
@@ -340,25 +344,27 @@ footer {
     margin-bottom: 110px;
   }
 
+  #btn-aboutus {
+    width: 270px;
+  }
+
   /*flexbox*/
   #box-container2 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: 240px;
+      margin-bottom: 260px;
+      margin-top: 260px;
   }
-  /*flexbox*/
 }
 
 @media screen and (max-width: 767px) {
-  /*flexbox*/
   #img-familyphoto {
     width: 440px;
     margin-top: 50px;
   }
 
-  /*vill centrera hur gör jag*/
   #info-aboutus-text {
     width: 390px;
     margin-top: 40px;
@@ -368,13 +374,13 @@ footer {
     width: 370px;
     margin-top: 90px; 
   }
-  /*flexbox*/
   
   #ourvision-wrapper {   
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 hr {
@@ -385,15 +391,12 @@ hr {
   margin-top: 45px;
 }
     
-
-  /*flexbox*/
   #box-container2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 240px;
-    margin-top: 340px;
+    margin-bottom: 240px 0 300px 0;
   }
-  /*flexbox*/
+ 
 }
