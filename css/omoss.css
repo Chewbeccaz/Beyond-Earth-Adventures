@@ -132,8 +132,6 @@ p {
 }
 /*header-end*/
 
-
-
 /*-----------------------------------------*/
 
 /*main-content start*/
@@ -157,7 +155,7 @@ p {
   align-items: center;
   margin: auto;
   max-width: 850px;
-} 
+}
 
 /*kontakta-oss knapp*/
 #btn-aboutus {
@@ -168,13 +166,13 @@ p {
   color: #184889;
   border: 1px solid #184889;
 }
-#btn-aboutus:hover{
+#btn-aboutus:hover {
   background-color: var(--primarybutton);
-  color:var(--navbarcolor);
+  color: var(--navbarcolor);
   border-radius: 4px;
   border: 1px solid #184889;
   cursor: pointer;
-  }  
+}
 
 #btn-aboutus {
   margin: 80px 0 80px 0;
@@ -189,28 +187,28 @@ hr {
 }
 
 /*vår vision text 1 och 2, månbild och solbild*/
-#img-moontravels, 
-#img-thesun      {
+#img-moontravels,
+#img-thesun {
   width: 350px;
 }
 
-#ourvision-text, 
+#ourvision-text,
 #ourvision2-text {
   width: 350px;
   height: 350px;
 }
 
-#ourvision-text, 
+#ourvision-text,
 #ourvision2-text,
-#img-moontravels, 
-#img-thesun  {
+#img-moontravels,
+#img-thesun {
   border-radius: 5px;
 }
 
-#ourvision-text, 
+#ourvision-text,
 #img-moontravels {
   margin-bottom: 30px;
-} 
+}
 
 #ourvision-wrapper {
   display: grid;
@@ -219,30 +217,29 @@ hr {
   gap: 70px;
   justify-items: center;
   align-items: center;
-  }
-  
+}
+
 #ourvision-text {
   grid-column: 4/5;
-  }
+}
 
 #ourvision-moon-img {
   grid-column: 5/6;
-  }
-  
+}
+
 #ourvision2-text {
   grid-column: 4/5;
   grid-row: 2/2;
-  }
-  
+}
+
 #ourvision-sun-img {
   grid-column: 5/6;
   grid-row: 2/2;
   margin-left: 5px;
-  }
-
+}
 
 /*blå infoboxar*/
-#box-container2{
+#box-container2 {
   height: 500px;
   width: 100%;
   display: flex;
@@ -252,7 +249,9 @@ hr {
   margin-top: 120px;
 }
 
-#box1, #box2, #box3{
+#box1,
+#box2,
+#box3 {
   min-width: 400px;
   height: 300px;
   margin-top: -40px;
@@ -261,7 +260,8 @@ hr {
   background-color: #184889;
 }
 
-#numbers, #bigletters {
+#numbers,
+#bigletters {
   color: var(--navbarcolor);
   display: flex;
   justify-content: center;
@@ -276,8 +276,8 @@ hr {
   font-size: 30px;
 }
 
-/*main-content end*/ 
-footer {
+/*main-content end*/
+/* footer {
   background-color: var(--footercolor);
   color: var(--footerfontcolor);
   display: grid;
@@ -296,8 +296,7 @@ footer {
 
 #footer-txt2 {
   grid-column: 4/5;
-}
-
+} */
 
 /* ---------- MEDIA QUERIES ------------*/
 
@@ -306,39 +305,39 @@ footer {
     width: 780px;
     margin-top: 60px;
     border-radius: 5px;
-    }
+  }
 
   #info-aboutus-text {
     width: 740px;
     margin-top: 20px;
-    }
+  }
 
   #ourvision-wrapper {
     gap: 40px;
     padding: 5px;
-    }
+  }
 
   /*grid*/
   #ourvision-text {
     grid-column: 1/2;
     margin-left: 20px;
-    }
-  
+  }
+
   #ourvision-moon-img {
     grid-column: 2/3;
-    }
-    
+  }
+
   #ourvision2-text {
     grid-column: 1/2;
     grid-row: 2/2;
     margin-left: 20px;
-    }
-    
+  }
+
   #ourvision-sun-img {
     grid-column: 2/3;
     grid-row: 2/2;
     margin-left: -3px;
-    }
+  }
 
   hr {
     max-width: 710px;
@@ -349,17 +348,17 @@ footer {
 
   #btn-aboutus {
     width: 270px;
-    margin-top: 65px; 
+    margin-top: 65px;
   }
 
   /*flexbox*/
   #box-container2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 260px;
-      margin-top: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 260px;
+    margin-top: 260px;
   }
 }
 
@@ -376,30 +375,30 @@ footer {
 
   #btn-aboutus {
     width: 370px;
-    margin-top: 80px; 
+    margin-top: 80px;
   }
-  
-  #ourvision-wrapper {   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
 
-hr {
-  max-width: 400px;
-  border: 1px solid var(--footercolor);
-  opacity: 0.35;
-  margin-bottom: 80px;
-  margin-top: 15px;
-}
+  #ourvision-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
 
-#ourvision-text,
-#ourvision2-text {
-  margin-bottom: -32px;
-}
-    
+  hr {
+    max-width: 400px;
+    border: 1px solid var(--footercolor);
+    opacity: 0.35;
+    margin-bottom: 80px;
+    margin-top: 15px;
+  }
+
+  #ourvision-text,
+  #ourvision2-text {
+    margin-bottom: -32px;
+  }
+
   #box-container2 {
     display: flex;
     flex-direction: column;
@@ -407,5 +406,4 @@ hr {
     align-items: center;
     margin: 310px 0 280px 0;
   }
- 
 }
