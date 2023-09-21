@@ -2,6 +2,8 @@
 <html lang="sv">
 
 <head>
+  <link rel="stylesheet" href="css/animeringar.css">
+  <link rel="stylesheet" href="css/navbar-mobil.css">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/kontakt.css" />
   <link rel="stylesheet" href="css/root.css">
@@ -12,27 +14,59 @@
 </head>
 
 <body>
+  <section id="chat">
+    <img src="" alt="">
+    <div id="chat-box">
+      <p>Chat</p>
+      <input id="chat-input" type="text" placeholder="Vad behöver du hjälp med?">
+    </div>
+  </section>
+  
   <nav>
     <ul>
       <li>
         <a href="index.html">Hem</a>
       </li>
-      <li><a href="destinationer.html">Destinationer</a></li>
+      <li><strong><a href="destinationer.html">Destinationer</a></li></strong>
       <li><a href="paketresor.html">Paketresor</a></li>
-      <li>
-        <img class="logga" src="img/logo.png" alt="Logotyp" />
+      <li id="dropdown-wrap">
+        <img class="logga" src="img/logo-up.png" alt="Logotyp" />
+        <div id="nav-dropdown">
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">Linkedin</a>
+        </div>
+        <img id="logga-ner" src="img/logo-down.png" alt="">
       </li>
-      <li>
-        <a href="recensioner.html">Recensioner</a>
-      </li>
-      <li>
-        <a href="omoss.html">Om oss</a>
-      </li>
-      <li>
-        <strong><a href="kontakt.html">Kontakt</a></strong>
-      </li>
+      <li><a href="recensioner.html">Recensioner</a></li>
+      <li><a href="omoss.html">Om oss</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
   </nav>
+  <!-- Navbar mobile -->
+  <div id="nav-wraper">
+    <div id="hamburgar-menu">
+      <input type="checkbox" value="menu"  id="checkbox-click">
+      <label for="checkbox-click"></label>
+      <div class="menu-box"></div>
+      <div class="menu-box"></div>
+      <div class="menu-box"></div>
+      
+
+      <!-- Dropdown mobil -->
+      <ul id="dropdown">
+      <li>Hem</li>
+      <li>Destinationer</li>
+      <li>Paketresor</li>
+      <li>Om oss</li>
+      <li>Kontakt</li>
+      <li>
+        <label for="checkbox-click">X</label>
+      </li>
+      </ul>
+      <!-- -------------------------------- -->
+    </div>
+  </div>
   <header>
     <h1>Kontakt</h1>
   </header>
