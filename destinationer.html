@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/navbar-mobil.css">
     <link rel="stylesheet" href="css/animeringar.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
@@ -19,7 +20,8 @@
         <input id="chat-input" type="text" placeholder="Vad behöver du hjälp med?">
       </div>
     </section>
-    <nav>
+    
+    <!-- <nav>
       <ul>
         <li>
           <a href="index.html">Hem</a>
@@ -39,13 +41,38 @@
         <li><a href="omoss.html">Om oss</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
-    </nav>
+    </nav> -->
+    <!-- Navbar mobile -->
+    <div id="nav-wraper">
+      <div id="hamburgar-menu">
+        <input type="checkbox" checked="checked" value="menu"  id="checkbox-click">
+        <label for="checkbox-click"></label>
+        <div class="menu-box"></div>
+        <div class="menu-box"></div>
+        <div class="menu-box"></div>
+        
+
+        <!-- Dropdown mobil -->
+        <ul id="dropdown">
+        <li>Hem</li>
+        <li>Destinationer</li>
+        <li>Paketresor</li>
+        <li>Om oss</li>
+        <li>Kontakt</li>
+        <li>
+          <label for="checkbox-click">X</label>
+        </li>
+        </ul>
+        <!-- -------------------------------- -->
+      </div>
+    </div>
+
     <header>
       <!-- <div id="nav-container"> -->
       <!-- </div> -->
-      <div id="header-title">
+      
         <h1>Destinationer</h1>
-      </div>
+      
       <div class="search-container">
         <input id="header-searchbar" type="text" placeholder="" />
         <p id="animering-text">Sök efter din (mar)drömsdestination.. </p>

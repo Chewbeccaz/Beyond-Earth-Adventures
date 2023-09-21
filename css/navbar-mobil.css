@@ -1,0 +1,77 @@
+@media screen and (max-width: 900px) {
+ 
+  nav{
+    visibility: hidden;
+  }
+
+  #nav-wraper{
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    background-color: var(--navbarcolor);
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+
+  #hamburgar-menu{
+    position: static;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+
+  .menu-box{
+    margin: 2vw;
+    height: 5vw;
+    background-color: #184889;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+  }
+
+  #checkbox-click:checked ~ #dropdown{
+    visibility: visible;
+  }
+
+  #checkbox-click{
+    visibility: hidden;
+    position: absolute;
+  }
+
+  label{
+    position: absolute;
+    background-color: transparent;
+    width: 20%;
+    height: 100%;
+  }
+
+
+  #dropdown{
+    visibility: hidden;
+    background-color: aqua;
+    position: absolute;
+    list-style: none;
+    left: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80%;
+    height: 1000px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+  }
+
+  #dropdown li{
+    font-size: 50px;
+    margin: auto;
+  }
+
+}
