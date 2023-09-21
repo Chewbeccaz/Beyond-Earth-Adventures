@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
 
 body {
-  background-color: var(--mainbg);
+  background-color: var(--mainbg); 
   margin: 0px;
 }
 
@@ -20,10 +20,11 @@ a:hover {
 nav {
   position: fixed;
   width: 100%;
+  top: 0;
   background-color: var(--navbarcolor);
   /* height: 100px; */
   font-family: var(--secondaryfont);
-  z-index: 999;
+  z-index: 3;
 }
 
 header {
@@ -38,11 +39,9 @@ header {
 }
 
 header h1 {
-  font-size: 72px;
+  font-size: 6vw;
   color: #fff;
   text-shadow: 2px 2px #1e252b;
-  font-family: var(--primaryfont);
-  font-weight: 300;
 }
 
 #header-title {
@@ -83,6 +82,7 @@ header h1 {
   align-items: end;
   justify-content: center;
   flex-direction: column;
+  background-color: #ffffff8e;
 }
 
 #header-searchbar {
@@ -92,7 +92,7 @@ header h1 {
   height: 40px;
   border-radius: 10px;
   border: 2px solid #fff;
-  background-color: #ffffff8e;
+  background-color: transparent;
   color: #153a6e;
 }
 
@@ -123,7 +123,8 @@ nav ul li {
   list-style-type: none;
 }
 
-
+h1,
+h2,
 h3 {
   font-family: var(--primaryfont);
   font-weight: 300;
@@ -137,7 +138,6 @@ p {
 
 h2{
   width: 100%;
-  margin: 100px 20px auto;
   display: flex;
   justify-content: center;
   font-size: 40px;
@@ -152,32 +152,20 @@ h2{
   display: flex;
   justify-content: center;
   gap: 75px;
+  overflow: hidden;
 }
 
 #box1,
 #box2,
 #box3 {
   margin-top: 50px;
-  width: 400px;
+  width: 20vw;
   height: 300px;
   border-radius: 10px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
   transition: 0.5s;
 }
 
-#content-box1,
-#content-box2,
-#content-box3,
-#content-box4,
-#content-box5,
-#content-box6 {
-  margin-top: 50px;
-  width: 400px;
-  height: 300px;
-  border-radius: 10px;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
-  transition: 0.5s;
-}
 
 
 #box1 {
@@ -195,39 +183,45 @@ h2{
   background-size: cover;
 }
 
-.box-wraper:hover #box1 
-{
-  position: relative;
-  height: 400px;
-  width: 500px;
-  transition: 0.5s;
-  filter: blur(5px);
-}
+@media screen and (min-width: 900px) {
+  
+  #nav-wraper{
+    display: none;
+  }
+  #hamburgar-menu{
+    display: none;
+  }
 
-.box-wraper:hover #box2 
-{
-  position: relative;
-  height: 400px;
-  width: 500px;
-  transition: 0.5s;
-  filter: blur(5px);
-}
-
-.box-wraper:hover #box3 
-{
-  position: relative;
-  height: 400px;
-  width: 500px;
-  transition: 0.5s;
-  filter: blur(5px);
-}
-
-.box-wraper{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-
+  .box-wraper:hover #box1 
+  {
+    position: relative;
+    height: 400px;
+    width: 40vw;
+    transition: 0.5s;
+    filter: blur(5px);
+  }
+  
+  .box-wraper:hover #box2 
+  {
+    position: relative;
+    height: 400px;
+    width: 40vw;
+    transition: 0.5s;
+    filter: blur(5px);
+  }
+  
+  .box-wraper:hover #box3 
+  {
+    position: relative;
+    height: 400px;
+    width: 40vw;
+    transition: 0.5s;
+    filter: blur(5px);
+  }
+  .box-wraper:hover #text-box{
+    opacity: 100%;
+    transition: 1s;
+  }
 }
 
 #text-box{
@@ -242,10 +236,13 @@ h2{
   transition: 0.5s;
 }
 
-.box-wraper:hover #text-box{
-  opacity: 100%;
-  transition: 1s;
+.box-wraper{
+  position: relative;
+  display: flex;
+  justify-content: center;  
 }
+
+
 
 /* ------------------------------------- */
 
@@ -293,28 +290,28 @@ h2{
 /* main content display card */
 
 #box-container2{
-  height: 400px;
-  width: 100%;
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 75px;
+  gap: 10px;
 }
 
-#box-container2{
-  height: 400px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 75px;
+#content-box1,
+#content-box2,
+#content-box3,
+#content-box4,
+#content-box5,
+#content-box6 {
+  margin-top: 50px;
+  width: 40vw;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
+  transition: 0.5s;
+  display: block;
 }
 
-#box-container3{
-  height: 400px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 75px;
-}
 
 footer {
   margin-top: 50px;
@@ -340,28 +337,103 @@ footer {
 
 
 @media screen and (max-width: 900px) {
-  #box-container2{
-    height: 1000px;
-    width: 100%;
+  #chat{
+    display: none;
+  }
+
+  #header-title h1{
+    font-size: 10vw;
+  }
+
+  main h2{
+    margin-top: 100px;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .search-container{
+    display: none;
+  }
+  #animering-text{
+    display: none;
+  }
+ 
+  
+  #box1,
+  #box2,
+  #box3 {
+    margin: auto;
+    margin-top: 50px;
+    width: 90vw;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
+    transition: 0.5s;
+  }
+
+  .box-wraper{
+    margin: auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-content: center;
+  }
+  #text-box{
+    position: relative;
+    opacity: 100%;
+    color: black;
+    height: 400px;
+  }
+
+  #box-container{
+    display: block;
+    height: 3000px;
+    width: 100%;
     gap: 75px;
   }
 
-#box-container{
-  overflow: hidden;
+  #box-container2{
+    display: block;
+    height: 3500px;
+    width: 100%;
+    gap: 75px;
+  }
+
+
+
+  #content-box1,
+  #content-box2,
+  #content-box3,
+  #content-box4,
+  #content-box5,
+  #content-box6 {
+    margin: 0 auto 100px auto;
+    width: 60vw;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
+    transition: 0.5s;
+  }
+
 }
 
-#box1,
-#box2,
-#box3 {
-  margin-top: 50px;
-  width: 100px;
-  height: 400px;
-  border-radius: 10px;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.406);
-  transition: 0.5s;
-}
+@media screen and (max-width: 425px){
+  #content-box1,
+  #content-box2,
+  #content-box3,
+  #content-box4,
+  #content-box5,
+  #content-box6 {
+    margin: 0 auto 100px auto;
+    width: 80vw;
+    height: 300px;
+  }
+
+  #box-container2{
+    display: block;
+    height: 2500px;
+    width: 100%;
+    gap: 75px;
+  }
+  #text-box{
+    margin-bottom: 200px;
+    width: 80%;
+  }
 }

@@ -18,7 +18,7 @@ a:hover {
 }
 
 nav {
-  position: static;
+  position: fixed;
   width: 100%;
   top: 0;
   background-color: var(--navbarcolor);
