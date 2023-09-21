@@ -19,7 +19,7 @@ a:hover {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   width: 100%;
   background-color: var(--navbarcolor);
   /* height: 100px; */
@@ -252,7 +252,7 @@ hr {
 #box1,
 #box2,
 #box3 {
-  min-width: 400px;
+  min-width: 300px;
   height: 300px;
   margin-top: -40px;
   border-radius: 10px;
@@ -301,6 +301,9 @@ hr {
 /* ---------- MEDIA QUERIES ------------*/
 
 @media screen and (max-width: 950px) {
+  #chat{
+    display: none;
+  }
   #img-familyphoto {
     width: 780px;
     margin-top: 60px;
