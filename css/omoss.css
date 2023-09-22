@@ -305,13 +305,13 @@ hr {
     display: none;
   }
   #img-familyphoto {
-    width: 780px;
+    max-width: 650px;
     margin-top: 60px;
     border-radius: 5px;
   }
 
   #info-aboutus-text {
-    width: 740px;
+    width: 600px;
     margin-top: 20px;
   }
 
@@ -367,12 +367,12 @@ hr {
 
 @media screen and (max-width: 767px) {
   #img-familyphoto {
-    width: 440px;
+    max-width: 380px;
     margin-top: 54px;
   }
 
   #info-aboutus-text {
-    width: 390px;
+    width: 360px;
     margin-top: 38px;
   }
 
