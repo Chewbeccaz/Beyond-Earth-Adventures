@@ -53,7 +53,9 @@
     width: 20%;
     height: 100%;
   }
-
+  #dropdown li label{
+    height: 20%;
+  }
 
   #dropdown{
     visibility: hidden;
